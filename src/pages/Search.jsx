@@ -12,10 +12,13 @@ const Search = () => {
   // const { data, isFetching, error } = useGetSongsBySearchQuery(searchTerm);
   const [data, setData] = useState([]);
   const [searchList, setSearchTerm] = useState([]);
-
+  ep = "search"
+  if (searchTerm.startsWith('_')) {
+    ep = "list-recommendations"
+  }
   const options = {
     method: 'GET',
-    url: 'https://shazam.p.rapidapi.com/search',
+    url: 'https://shazam.p.rapidapi.com/' + ep,
     params: {
       term: searchTerm,
       locale: 'en-US',
