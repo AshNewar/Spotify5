@@ -4,7 +4,7 @@ A personalized music player integrated with API which gives you song recommendat
 ### How to use
 Answer few questions about your taste in music and get recommended songs to your taste.
 
-You can also see top charts and 
+You can also see top charts and artists through the top charts page in the application.
 
 ### Endpoints of the API used
 `Shazam` API has been used for this application due to its versatility and usage.

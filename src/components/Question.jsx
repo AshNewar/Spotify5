@@ -1,15 +1,21 @@
 import React from 'react'
 import Login from './Login'
 import "./Login.css"
+import { useNavigate } from 'react-router-dom'
 
 const Question = () => {
+    const navigate = useNavigate();
+    const handleSubmit = () => {
+        navigate("/recommendation");
+
+    }
     return (
-        <div>
-            <h1>Few Question About Your Taste</h1>
+        <div className='form'>
+            <h1 className='login-text'>Few Question About Your Taste</h1>
             <form className='form'>
                 <div>
-                    <label for="cars">Whats Yours Mood</label>
-                    <select name="cars" id="cars">
+                    <label className='login-text'>Whats Yours Mood</label>
+                    <select className="cars" id="cars">
                         <option value="volvo">Happy</option>
                         <option value="saab">Sad</option>
                         <option value="opel">Cheer</option>
@@ -19,7 +25,7 @@ const Question = () => {
 
                 </div>
                 <div>
-                    <label for="cars">Whats Yours Taste</label>
+                    <label className='login-text'>Whats Yours Taste</label>
                     <select name="cars" id="cars">
                         <option value="volvo">BollyWood</option>
                         <option value="saab">HollyWood</option>
@@ -27,7 +33,7 @@ const Question = () => {
                     </select>
 
                 </div>
-                <button className='login-button'>Submit</button>
+                <button className='login-button' onClick={handleSubmit}>Submit</button>
 
             </form>
 
