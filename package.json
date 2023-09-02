@@ -1,6 +1,6 @@
 {
   "name": "elagant-music-app",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "homepage": "https://AshNewar.github.io/Spotify5",
 
