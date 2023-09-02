@@ -55,8 +55,10 @@ const Discover = () => {
     <div className="relative flex"  >
       <Sidebar />
       <div className="flex flex-col">
-        <Searchbar />
+        <Searchbar title={"Search"} />
         <div className="w-full flex justify-between items-center sm:flex-row flex-col mt-4 mb-10">
+          <Searchbar title={"Enter Song Id for Recommendation"} />
+
           <h2 className="font-bold text-3xl text-white text-left">Recommendations</h2>
 
           {/* <select

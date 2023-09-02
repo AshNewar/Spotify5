@@ -17,7 +17,7 @@ const Search = () => {
     method: 'GET',
     url: 'https://shazam.p.rapidapi.com/search',
     params: {
-      term: 'kiss the rain',
+      term: searchTerm,
       locale: 'en-US',
       offset: '0',
       limit: '5'
@@ -65,6 +65,7 @@ const Search = () => {
             key={song.key}
             song={song.track}
             data={data}
+            id={song.key}
             i={i}
           />
         ))}

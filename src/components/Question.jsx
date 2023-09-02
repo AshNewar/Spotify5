@@ -25,11 +25,11 @@ const Question = () => {
 
                 </div>
                 <div>
-                    <label className='login-text'>Whats Yours Taste</label>
+                    <label className='login-text'>What's your taste</label>
                     <select name="cars" id="cars">
-                        <option value="volvo">BollyWood</option>
-                        <option value="saab">HollyWood</option>
-                        <option value="opel">TollyWood</option>
+                        <option value="bolly">BollyWood</option>
+                        <option value="holly">HollyWood</option>
+                        <option value="tolly">TollyWood</option>
                     </select>
 
                 </div>

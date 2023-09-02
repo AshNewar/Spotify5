@@ -42,6 +42,9 @@ const SongCard = ({ song, activeSong, data, i }) => {
             {song.subtitle}
           </Link>
         </p>
+        <p className='text-sm truncate text-gray-300 mt-1'>
+          ID: {song.key}
+        </p>
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 # Musi5
 A personalized music player integrated with API which gives you song recommendations based on prior song history and questionnaire for new users, made by Hall 5.
+It Uses the Shazam API to abstract The Songs.
+
 
 ### How to use
 Answer few questions about your taste in music and get recommended songs to your taste.

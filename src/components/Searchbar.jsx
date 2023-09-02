@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { FiSearch } from 'react-icons/fi';
 
-const Searchbar = () => {
+const Searchbar = ({ title }) => {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -25,7 +25,7 @@ const Searchbar = () => {
           autoComplete="off"
           id="search-field"
           className="flex-1 bg-transparent border-none placeholder-gray-500 outline-none text-base text-white p-4"
-          placeholder="Search"
+          placeholder={title}
           type="search"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
